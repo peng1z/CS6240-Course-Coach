@@ -1,9 +1,9 @@
 // List of video data with YouTube IDs and titles
 const videos = [
-    { id: 'dQw4w9WgXcQ', title: 'Introduction to Programming' },
-    { id: 'kxopViU98Xo', title: 'Data Science Basics' },
-    { id: 'w7ejDZ8SWv8', title: 'Web Development Crash Course' },
-    { id: '3EoI-6lQFIE', title: 'Machine Learning Explained' }
+    { id: 'inDC9jgwpWY', title: 'Install HADOOP on MacOS (Apple Silicon)' },
+    { id: 'knAS0w-jiUk', title: 'Install Hadoop in Windows 10 & 11' },
+    { id: 'a9__D53WsUs', title: 'What is AWS?' },
+    { id: 'S6Ja55n-o0M', title: 'Introduction to Amazon Elastic MapReduce' }
 ];
 
 // Function to dynamically load videos
