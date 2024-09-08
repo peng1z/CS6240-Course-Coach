@@ -1,0 +1,165 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #333;
+    color: #f9f9f9;
+}
+
+/* Navigation Bar Styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    background-color: #007acc;
+    color: white;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.nav-left, .nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-left button, .nav-right button {
+    background: none;
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.nav-right button {
+    margin-left: auto;
+}
+
+/* Styling for Ordered List on Home Page */
+#home ol {
+    padding-left: 40px; /* Add some padding to align the list properly */
+    margin: 20px 0;
+    list-style-type: decimal; /* Set the list style type to decimal */
+    font-size: 18px; /* Adjust the font size */
+    line-height: 1.6; /* Set line height for better readability */
+}
+
+/* Section Styles */
+.page {
+    margin-top: 70px; /* To account for the fixed navigation bar height */
+    padding: 20px;
+}
+
+/* Home Page Styles */
+#home header h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#home article h2 {
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#home article p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Homework Page Styles */
+#homework header {
+    margin-bottom: 20px;
+}
+
+#search {
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px auto;
+    display: block;
+}
+
+.video-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.video-container img {
+    width: 150px;
+    height: auto;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.video-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Resources Page Styles */
+#resources-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+#resources-list li {
+    padding: 10px 20px;
+    margin: 10px 0;
+    background-color: #e6f2ff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+#resources-list li a {
+    text-decoration: none;
+    color: #007acc;
+    font-weight: bold;
+}
+
+#resources-list li:hover {
+    background-color: #d1eaff;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    background-color: #007acc;
+    color: white;
+}
+
+/* Hide Elements Initially */
+.page {
+    display: none;
+}
