@@ -10,81 +10,83 @@
     <title>CS6240 Course Coach</title>
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav>
-        <div class="nav-left">
-            <button onclick="navigate('home')">Home</button>
-            <button onclick="navigate('homework')">Homework</button>
-            <button onclick="navigate('resources')">Resources</button>
-        </div>
-        <div class="nav-right">
-            <button id="theme-toggle" onclick="toggleTheme()">Dark Mode</button>
-        </div>
-    </nav>
-    
-    <!-- Home Page Content -->
-    <section id="home" class="page">
-        <header>
-            <h1>Welcome to CS6240 Course Coach</h1>
-        </header>
-        <article>
-            <h2>Course Overview</h2>
-            <p>This platform is designed to help students access all the resources needed for the CS6240 course, 
-                including video lectures, homework, and additional study materials.</p>
-            
-            <h2>How to Use</h2>
-            <p>Navigate through the sections using the top menu to find homework guidance, video tutorials, and resources.</p>
-            <ol>
-                <li>Click on the "Homework" button.</li>
-                <li>Search for videos using the search bar.</li>
-                <li>Click on a video to open it in the browser.</li>
-            </ol>
+    <div class="content-wrapper">
+        <!-- Navigation Bar -->
+        <nav>
+            <div class="nav-left">
+                <button onclick="navigate('home')">Home</button>
+                <button onclick="navigate('homework')">Homework</button>
+                <button onclick="navigate('resources')">Resources</button>
+            </div>
+            <div class="nav-right">
+                <button id="theme-toggle" onclick="toggleTheme()">Dark Mode</button>
+            </div>
+        </nav>
+        
+        <!-- Home Page Content -->
+        <section id="home" class="page">
+            <header>
+                <h1>Welcome to CS6240 Course Coach</h1>
+            </header>
+            <article>
+                <h2>Course Overview</h2>
+                <p>This platform is designed to help students access all the resources needed for the CS6240 course, 
+                    including video lectures, homework, and additional study materials.</p>
+                
+                <h2>How to Use</h2>
+                <p>Navigate through the sections using the top menu to find homework guidance, video tutorials, and resources.</p>
+                <ol>
+                    <li>Click on the "Homework" button.</li>
+                    <li>Search for videos using the search bar.</li>
+                    <li>Click on a video to open it in the browser.</li>
+                </ol>
 
-            <h2> How to Succeed in this Course</h2>
-            <p>This is an advanced graduate course about a rapidly evolving topic. It is therefore essential that you go through 
-                the online material carefully and methodically, attend the lectures (hybrid version) and participate in online 
-                discussions. Homework is designed to help you understand the material and prepare for the exam. The following often works well:</p>
+                <h2> How to Succeed in this Course</h2>
+                <p>This is an advanced graduate course about a rapidly evolving topic. It is therefore essential that you go through 
+                    the online material carefully and methodically, attend the lectures (hybrid version) and participate in online 
+                    discussions. Homework is designed to help you understand the material and prepare for the exam. The following often works well:</p>
 
-            <ol>
-                <li>When going through the online material, make notes about questions you have or about material you find difficult to understand. 
-                    Then share these questions through the online forum or in class (hybrid version).</li>
-                <li>When you get a question in a check-your-knowledge quiz wrong or were not sure about the answer, go back to the corresponding 
-                    online material and try to find the answer.</li>
-                <li>After going through an online lecture, try to explain the material to yourself or to a friend. This way you can better judge if 
-                    you understand it. Once you identified things that need clarification, try to find the answer yourself by consulting one or more of 
-                    the recommended books. If you cannot find the answer with reasonable effort, ask others for help (online discussion forum, office 
-                    hours, and in-class discussions).</li>
-                <li>Start working on homework assignments as soon as they come out. This way you have time to ask questions and get help.</li>
-            </ol>
-        </article>
-    </section>
-    
-    <!-- Homework Page Content -->
-    <section id="homework" class="page" style="display: none;">
-        <header>
-            <h1>Homework Videos Tutorials</h1>
-            <input type="text" id="search" placeholder="Search videos..." onkeyup="filterVideos()">
-        </header>
-        <div id="video-list">
-            <!-- Dynamically loaded video thumbnails -->
-        </div>
-    </section>
-    
-    <!-- Resources Page Content -->
-    <section id="resources" class="page" style="display: none;">
-        <header>
-            <h1>Useful Resources</h1>
-        </header>
-        <ul id="resources-list">
-            <li><a href="https://www.oreilly.com/library/view/mapreduce-design-patterns/9781449341954/" target="_blank">MapReduce Design Patterns</a> by Donald Miner and Adam Shook</li>
-            <li><a href="https://www.oreilly.com/library/view/hadoop-the-definitive/9781491901687/" target="_blank">Hadoop: The Definitive Guide</a> by Tom White</li>
-            <li><a href="https://www.oreilly.com/library/view/high-performance-spark/9781098145842/" target="_blank">High Performance Spark</a> by Holden Karau and Rachel Warren</li>
-            <li><a href="https://www.oreilly.com/library/view/spark-in-action/9781617292606/" target="_blank">Spark in Action</a> by Petar Zecevic and Marko Bonaci</li>
-            <li><a href="https://www.oreilly.com/library/view/programming-elastic-mapreduce/9781449364038/" target="_blank">Programming Elastic MapReduce</a> by Kevin Schmidt and Christopher Phillips</li>
-            <li><a href="https://www.oreilly.com/library/view/hbase-the-definitive/9781449314682/" target="_blank">HBase: The Definitive Guide</a> by Lars George</li>
-            <li><a href="https://www.oreilly.com/library/view/hadoop-in-action/9781935182191/" target="_blank">Hadoop in Action</a> by Chuck Lam</li>
-        </ul>
-    </section>
+                <ol>
+                    <li>When going through the online material, make notes about questions you have or about material you find difficult to understand. 
+                        Then share these questions through the online forum or in class (hybrid version).</li>
+                    <li>When you get a question in a check-your-knowledge quiz wrong or were not sure about the answer, go back to the corresponding 
+                        online material and try to find the answer.</li>
+                    <li>After going through an online lecture, try to explain the material to yourself or to a friend. This way you can better judge if 
+                        you understand it. Once you identified things that need clarification, try to find the answer yourself by consulting one or more of 
+                        the recommended books. If you cannot find the answer with reasonable effort, ask others for help (online discussion forum, office 
+                        hours, and in-class discussions).</li>
+                    <li>Start working on homework assignments as soon as they come out. This way you have time to ask questions and get help.</li>
+                </ol>
+            </article>
+        </section>
+        
+        <!-- Homework Page Content -->
+        <section id="homework" class="page" style="display: none;">
+            <header>
+                <h1>Homework Videos Tutorials</h1>
+                <input type="text" id="search" placeholder="Search videos..." onkeyup="filterVideos()">
+            </header>
+            <div id="video-list">
+                <!-- Dynamically loaded video thumbnails -->
+            </div>
+        </section>
+        
+        <!-- Resources Page Content -->
+        <section id="resources" class="page" style="display: none;">
+            <header>
+                <h1>Useful Resources</h1>
+            </header>
+            <ul id="resources-list">
+                <li><a href="https://www.oreilly.com/library/view/mapreduce-design-patterns/9781449341954/" target="_blank">MapReduce Design Patterns</a> by Donald Miner and Adam Shook</li>
+                <li><a href="https://www.oreilly.com/library/view/hadoop-the-definitive/9781491901687/" target="_blank">Hadoop: The Definitive Guide</a> by Tom White</li>
+                <li><a href="https://www.oreilly.com/library/view/high-performance-spark/9781098145842/" target="_blank">High Performance Spark</a> by Holden Karau and Rachel Warren</li>
+                <li><a href="https://www.oreilly.com/library/view/spark-in-action/9781617292606/" target="_blank">Spark in Action</a> by Petar Zecevic and Marko Bonaci</li>
+                <li><a href="https://www.oreilly.com/library/view/programming-elastic-mapreduce/9781449364038/" target="_blank">Programming Elastic MapReduce</a> by Kevin Schmidt and Christopher Phillips</li>
+                <li><a href="https://www.oreilly.com/library/view/hbase-the-definitive/9781449314682/" target="_blank">HBase: The Definitive Guide</a> by Lars George</li>
+                <li><a href="https://www.oreilly.com/library/view/hadoop-in-action/9781935182191/" target="_blank">Hadoop in Action</a> by Chuck Lam</li>
+            </ul>
+        </section>
+    </div>
 
     <footer>
         <p>&copy; 2024 Peng Zhang</p>

@@ -52,6 +52,12 @@ function navigate(page) {
         section.style.display = 'none'; // Hide all pages
     });
     document.getElementById(page).style.display = 'block'; // Show selected page
+    
+    // Highlight the active navigation button
+    document.querySelectorAll('nav button').forEach(button => {
+        button.classList.remove('active');
+    });
+    document.querySelector(`button[onclick="navigate('${page}')"]`).classList.add('active');
 }
 
 // Function to toggle dark mode

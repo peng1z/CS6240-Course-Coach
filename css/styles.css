@@ -12,11 +12,14 @@ body {
     color: #333;
     padding: 0;
     transition: background-color 0.3s, color 0.3s;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Dark Mode */
 body.dark-mode {
-    background-color: #333;
+    background-color: #1a1a1a;
     color: #f9f9f9;
 }
 
@@ -46,10 +49,20 @@ nav {
     cursor: pointer;
     font-size: 16px;
     text-transform: uppercase;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .nav-right button {
     margin-left: auto;
+}
+
+.nav-left button:hover, .nav-right button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-left button.active, .nav-right button.active {
+    background-color: white;
+    color: #007acc;
 }
 
 /* Styling for Ordered List on Home Page */
@@ -109,7 +122,12 @@ nav {
     padding: 10px;
     margin-bottom: 10px;
     background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode .video-container {
+    background-color: #2a2a2a;
+    border-color: #444;
 }
 
 .video-container img {
@@ -123,6 +141,11 @@ nav {
     font-size: 18px;
     font-weight: bold;
     color: #333;
+    transition: color 0.3s;
+}
+
+body.dark-mode .video-title {
+    color: #f0f0f0;
 }
 
 /* Resources Page Styles */
@@ -153,10 +176,10 @@ nav {
 
 footer {
     text-align: center;
-    margin-top: 20px;
     padding: 10px 0;
     background-color: #007acc;
     color: white;
+    margin-top: auto;
 }
 
 /* Hide Elements Initially */
