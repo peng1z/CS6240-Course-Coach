@@ -1,9 +1,8 @@
 // List of video data with YouTube IDs and titles
 const videos = [
-    { id: 'inDC9jgwpWY', title: 'Install HADOOP on MacOS (Apple Silicon)' },
-    { id: 'knAS0w-jiUk', title: 'Install Hadoop in Windows 10 & 11' },
-    { id: 'a9__D53WsUs', title: 'What is AWS?' },
-    { id: 'S6Ja55n-o0M', title: 'Introduction to Amazon Elastic MapReduce' }
+    { id: 'MFKH89A66mY', title: 'Install Hadoop 3.3.6 in 4 Steps' },
+    { id: 'op8AfMWdmQc', title: 'Hadoop Configuration Quick Start' },
+    { id: 'YL3UWNd2V3U', title: 'Hadoop Word Count Example' }
 ];
 
 // Function to dynamically load videos
