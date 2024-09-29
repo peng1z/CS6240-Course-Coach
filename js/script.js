@@ -2,7 +2,9 @@
 const videos = [
     { id: 'MFKH89A66mY', title: 'Install Hadoop 3.3.6 in 4 Steps' },
     { id: 'op8AfMWdmQc', title: 'Hadoop Configuration Quick Start' },
-    { id: 'YL3UWNd2V3U', title: 'Hadoop Word Count Example' }
+    { id: 'YL3UWNd2V3U', title: 'Hadoop Word Count Example' },
+    { id: 'cUJ9rjmCP7c', title: 'AWS EMR Setup And Run With Example (part1)' },
+    { id: '9uAs798WwCI', title: 'AWS EMR Setup And Run With Example (part2)' },
 ];
 
 // Function to dynamically load videos
