@@ -5,6 +5,7 @@ const videos = [
     { id: 'YL3UWNd2V3U', title: 'Hadoop Word Count Example' },
     { id: 'cUJ9rjmCP7c', title: 'AWS EMR Setup And Run With Example (part1)' },
     { id: '9uAs798WwCI', title: 'AWS EMR Setup And Run With Example (part2)' },
+    { id: '1HN7v0hBCNs', title: 'Run Hadoop MapReduce in IDE (IntelliJ)' },
 ];
 
 // Function to dynamically load videos
