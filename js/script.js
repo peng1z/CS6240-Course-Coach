@@ -6,7 +6,8 @@ const videos = [
     { id: 'cUJ9rjmCP7c', title: 'AWS EMR Setup And Run With Example (part1)' },
     { id: '9uAs798WwCI', title: 'AWS EMR Setup And Run With Example (part2)' },
     { id: '1HN7v0hBCNs', title: 'Run Hadoop MapReduce in IDE (IntelliJ)' },
-    { id: 'H0SkMKN233I', title: 'Run Pig in AWS EMR' },
+    { id: 'H0SkMKN233I', title: 'Run Pig on AWS EMR' },
+    { id: '3q_TWWxQg7w', title: 'Run HBase on AWS EMR' },
 ];
 
 // Function to dynamically load videos
